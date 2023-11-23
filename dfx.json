@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "PROJECT_23NOV_BLOCKCHIAN_backend": {
+      "main": "src/PROJECT_23NOV_BLOCKCHIAN_backend/main.mo",
+      "type": "motoko"
+    },
+    "PROJECT_23NOV_BLOCKCHIAN_frontend": {
+      "dependencies": [
+        "PROJECT_23NOV_BLOCKCHIAN_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/PROJECT_23NOV_BLOCKCHIAN_frontend/src/index.html"
+      },
+      "source": [
+        "src/PROJECT_23NOV_BLOCKCHIAN_frontend/assets",
+        "dist/PROJECT_23NOV_BLOCKCHIAN_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
